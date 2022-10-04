@@ -1,0 +1,29 @@
+.button-outline-light {
+  color: $bisque;
+  margin: 4px 8px;
+  border: 2px solid $bisque;
+  border-radius: 8px;
+  text-decoration: none;
+
+  &:hover{
+    box-shadow: 5px 8px 5px 0px rgba(0,0,0,0.75);
+    background-color: $bisque; opacity: .6;
+    color: $dark-green;
+    transition: .25s;
+  }
+}
+
+.button-outline-dark {
+  color: $dark-green;
+  margin: 4px 8px;
+  border: 2px solid $dark-green;
+  border-radius: 8px;
+  text-decoration: none;
+
+  &:hover{
+    box-shadow: 5px 8px 5px 0px rgba(0,0,0,0.75);
+    background-color: $dark-green; opacity: .6;
+    color: $bisque;
+    transition: .25s;
+  }
+}
