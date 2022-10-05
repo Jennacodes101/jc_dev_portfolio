@@ -1,6 +1,5 @@
-.navbar-lewagon {
+.nav-portfolio {
   justify-content: space-between;
-  background: white;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +8,17 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.nav-logo-sq {
+  width: 50px;
+  height: 50 px;
+  transform: rotate(45deg);
+  border: 1.5px solid $dark-green;
+}
+
+.nav-logo-text{
+  color: $dark-green;
+
+
 }
