@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: jc_dev_portfolio_production
-  username: jc_dev_portfolio
-  password: <%= ENV['JC_DEV_PORTFOLIO_DATABASE_PASSWORD'] %>
+  # database: jc_dev_portfolio_production
+  # username: jc_dev_portfolio
+  # password: <%= ENV['JC_DEV_PORTFOLIO_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
