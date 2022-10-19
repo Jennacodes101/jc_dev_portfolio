@@ -1,24 +1,88 @@
+// general navbar
+
 .nav-portfolio {
   justify-content: space-between;
+
+  padding: 24px 50px 36px 36px;
+  display: flex;
+  width: 100%;
+  min-height: 40px;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.absolute{
+  position: absolute;
 }
 
+// navbar logo
+.nav-logo{
+  display: flex;
+  height: 40px;
+  // border: 2px solid $rajah;
+}
+
+.nav-logo:hover{
+  #nav-sq1 {
+    border: 1.5px solid $dk-yellow;
+  }
+  #nav-sq2 {
+    left: -5px;
+    border: 1.5px solid $dk-yellow;
+    transition: .5s ease-in-out;
+  }
+  #nav-txt{
+    font-size: 24px;
+    transition: .5s ease-in-out;
+    left: -28px;
+    color: $dk-yellow;
+    animation-delay: .1s;
+  }
+  .nav-logo-text{
+    left: -25px;
+    transition: .5s ease-in-out;
+  }
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
 .nav-logo-sq {
-  width: 50px;
-  height: 50 px;
+  width: 30px;
+  height: 30px;
   transform: rotate(45deg);
-  border: 1.5px solid $dark-green;
+  border: 1.5px solid $dk-gray;
+  position: relative;
+  &.sq-1 {
+    left: 26px;
+  }
+  &.sq-2{
+    left: 0px;
+  }
 }
 
 .nav-logo-text{
-  color: $dark-green;
+  color: $dk-gray;
+  position: relative;
+  left: -24px;
+}
 
 
+// navbar menu
+.navbar-menu-links {
+  color: $dk-gray;
+  text-decoration: none;
+}
+
+.navbar-menu {
+  li {
+    display: inline-block;
+    margin: 4px 8px;
+  }
 }
