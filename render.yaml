@@ -1,0 +1,18 @@
+databases:
+  - name: jc_dev_portfolio
+    databaseName: jc_dev_portfolio
+    user: jc_dev_portfolio
+
+services:
+  - type: web
+    name: jc_dev_portfolio
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: "bundle exec puma -C config/puma.rb"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: jc_dev_portfolio
+          property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: false
