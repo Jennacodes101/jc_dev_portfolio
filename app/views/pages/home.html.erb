@@ -1,2 +1,85 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="m4n">
+  <div class=" hero container">
+    <p> hi, my name is: </p>
+    <div class="">
+      <h1> Jenna Castillo.</h1>
+      <h1> I build things for the web.</h1>
+    </div>
+  </div>
+</div>
+<div class="container mt-5 about">
+  <div class="d-inline-flex ">
+    <div class="p-2 m-2">
+      <%= image_tag("profile_1.jpeg", class: "about-img") %>
+    </div>
+    <div class='p-2 m-2'>
+      <h3>About me</h3>
+      <div class=" about-text">
+        <p> I am a full-stack web developer focused on building and designing exceptional digital products. I have a background in
+          marketing and video production. In 2021 I began my career transition into
+          tech with online resources such as Harvard's CS50, and in 2022 I completed
+          Le Wagon's (a european-based education company) 6-month full-stack intensive.
+          I am currently building merchant and scheduling web applications.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-5 ">
+  <div class="row tech-section justify-content-center">
+    <div class="col-4 project-stack me-5">
+      <h3 class="mt-1 py-2"> tech stack </h3>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Front-end
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the first item's accordion body.</strong> It is shown by defau
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Back-end
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Database
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-4 px-3 project-stack">
+      <h3 class="mt-1 py-2"> Current Projects</h3>
+      <p> I am building a scheduling application and an ecommerce site to widen the depth of
+          my knowlege. </p>
+    </div>
+  </div>
+</div>
+
+<div class="container works-section">
+  <h2> Works </h2>
+  <div class="works-grid">
+  </div>
+</div>
