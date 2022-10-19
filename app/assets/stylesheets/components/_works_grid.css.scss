@@ -1,13 +1,18 @@
 .works {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  //grid-gap: 16px;
+  height: fit-content;
 }
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .works {
     grid-template-columns: 1fr;
+  }
+  .works-card {
+    width: 200px;
+    height: auto;
   }
 }
 
@@ -16,12 +21,20 @@
   .works {
     grid-template-columns: 1fr;
   }
+  .works-card {
+    width: 250px;
+    height: auto;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .works {
     grid-template-columns: 1fr 1fr;
+  }
+  .works-card {
+    width: 300px;
+    height: auto;
   }
 }
 
@@ -30,11 +43,42 @@
   .works {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  .works-card {
+    width: 300px;
+    height: auto;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .works {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .works-card {
+    width: 400px;
+    height: auto;
+  }
+}
+
+.works-card {
+
+  border-radius: 8px !important;
+  .wc-img{
+    max-width: 400px;
+    max-height: 200px;
+  }
+  .card-title{
+    color: $dk-gray !important;
+  }
+  .card-img-bottom{
+    border-radius: 0px 0px 4px 4px;
+  }
+
+  background-color: $platinum;
+}
+.works-section{
+  h2{
+    color: $dk-gray !important;
   }
 }
