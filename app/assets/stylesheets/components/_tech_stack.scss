@@ -1,0 +1,13 @@
+.tech-stack {
+  background-color: $platinum;
+  border-radius: 8px;
+  color: $dk-gray;
+  max-width: 800px;
+  .col {
+    margin: 0px !important;
+  }
+  h2{
+    color: $cultured;
+    text-shadow: 1px 1px #adadad;
+  }
+}

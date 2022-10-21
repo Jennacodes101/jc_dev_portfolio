@@ -11,18 +11,19 @@ body {
 }
 .hero{
   background-color: $platinum; opacity: 75%;
-  width: max-content;
+  // width: max-content;
   max-width: 800px;
   border-radius: 12px;
   color: $dark-green;
   padding: 20px;
   position: relative;
   bottom: 0%;
+  margin-bottom: 10%;
   h1 {
     font-weight: 700;
     font-size: 60px;
     -webkit-text-stroke: 1px rgb(255, 255, 255);
-    font-family:sans-serif
+    font-family:sans-serif;
   }
   p{
     font-family: 'Cutive Mono', monospace;
@@ -31,7 +32,7 @@ body {
 
 .about{
   background-color: $md-gray;
-  max-width: 600px;
+  max-width: 50%;
   border-radius: 8px;
   height: 300px;
   p {
@@ -41,6 +42,7 @@ body {
     border-color: $cultured;
   }
   .about-img{
+    margin-top: 50px;
     border-radius: 100%;
     width: 20vh;
     height: auto;
@@ -81,3 +83,17 @@ body {
   }
 }
 
+.contact-section {
+  border-radius: 8px;
+  width: 20%;
+  border: 2px solid $dk-yellow;
+  padding: 10px;
+
+}
+
+.contact-links {
+  li{
+    display: inline;
+    list-style: none;
+  }
+}
