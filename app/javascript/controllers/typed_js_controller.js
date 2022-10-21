@@ -7,7 +7,7 @@ export default class extends Controller {
     new Typed(this.element, {
       strings: ["I build things for the web.", "I am a full-stack developer.", "I am a rubyist.", "I am a web developer."],
       typeSpeed: 50,
-      loop: false,
+      loop: true,
     });
   }
 }
