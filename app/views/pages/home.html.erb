@@ -1,13 +1,14 @@
-<div class="m4n">
-  <div class=" hero container">
-    <p> hi, my name is: </p>
-    <div class="">
-      <h1> Jenna Castillo.</h1>
-      <h1> I build things for the web.</h1>
+<div class="m4n"></div>
+<section class="hero container">
+  <p> hi, my name is: </p>
+  <div class="">
+    <h1> Jenna Castillo.</h1>
+    <div class="" style="height: 50px">
+          <h2> <span data-controller="typed-js"></span> </h2>
     </div>
   </div>
-</div>
-<div class="container mt-5 about">
+</section>
+<div class="container mt-5 about" id="about-me">
   <div class="d-inline-flex ">
     <div class="p-2 m-2">
       <%= image_tag("profile.jpeg", class: "about-img") %>
@@ -26,27 +27,38 @@
   </div>
 </div>
 
-<div class="container mt-5 ">
+<div class="container-sm tech-stack my-5 p-2">
+  <div> <h2> Stack </h2> </div>
+  <div class="row justify-content-center">
+    <div class="col-2 p-1"> <i class="px-2 fab fa-python fa-4x"></i><i class="px-2 far fa-gem fa-4x"></i> </div>
+    <div class="col-2 p-1"> <i class=" px-2 fab fa-js fa-4x"></i> <i class="px-1 fab fa-html5 fa-4x"></i> <i class="px-1 fab fa-css3 fa-4x"></i></div>
+    <div class="col-2 p-1"> <i class="fab fa-sass fa-4x"></i></i> <i class="px-2 fab fa-github fa-4x"></i> <i class="px-2 fas fa-database fa-4x"></i> </div>
+  </div>
+</div>
+
+
+<!-- <div class="container mt-5 ">
   <div class="row tech-section justify-content-center">
     <div class="col-4 project-stack me-5">
-      <h3 class="mt-1 py-2"> tech stack </h3>
+      <h3 class="mt-1 py-2"> Experience </h3>
       <div class="accordion" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingOne">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              Front-end
+              <h5> Le Wagon Full-stack Bootcamp </h5>
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
             <div class="accordion-body">
-              <strong>This is the first item's accordion body.</strong> It is shown by defau
+              <p> Ruby/ Ruby on Rails</p>
+              <p> Python </p>
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingTwo">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              Back-end
+              <h5> Harvard CS50 </h5> <i class=" px-1 fab fa-js"></i> <i class="px-1 fab fa-html5"></i> <i class="px-1 fab fa-css3"></i>
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -58,7 +70,7 @@
         <div class="accordion-item">
           <h2 class="accordion-header" id="headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Database
+              <h5> Previous Work </h5> <i class="px-1 fas fa-database"></i>
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -69,16 +81,15 @@
         </div>
       </div>
     </div>
-
     <div class="col-4 px-3 project-stack">
-      <h3 class="mt-1 py-2"> Current Projects</h3>
+      <h3 class="mt-1 py-2"> </h3>
       <p> I am building a scheduling application and an ecommerce site to widen the depth of
           my knowlege. </p>
     </div>
   </div>
-</div>
+</div> --> 
 
-<div class="container works-section mt-5">
+<div class="container works-section mt-5" id="works">
   <h2 > Highlighted Works </h2>
   <div class="works">
 
@@ -93,14 +104,14 @@
       <div class="card-body">
         <h5 class="card-title"> Watchlist</h5>
       </div>
-      <%= image_tag("deja_vu.jpg", class:"card-img-bottom") %>
+      <%= image_tag("watchlist.png", class:"card-img-bottom") %>
     </div>
 
     <div class="card works-card" data-bs-toggle="modal" data-bs-target="#quizzleModal">
       <div class="card-body">
         <h5 class="card-title"> Quizzle</h5>
       </div>
-      <%= image_tag("deja_vu.jpg", class:"card-img-bottom") %>
+      <%= image_tag("quizzle.png", class:"card-img-bottom") %>
     </div>
 
 
@@ -112,15 +123,17 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="dejaVuModalLabel">Deja Vu</h1>
+        <h1 class="modal-title fs-3 me-3" id="dejaVuModalLabel"> Deja Vu </h1> <h5> <span class="mx-1 badge bg-secondary">Ruby on Rails</span> <span class="mx-1 badge bg-secondary">JS</span></h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        An amazing product
+        <p> Deja Vu is a web-application where users can discover experiences people recommend across the globe.
+            It built with Ruby, Rails 6, JS, Postgres and Mapbox API. I built this application as a final project for
+            <a href="https://www.lewagon.com/" target="_blank">Le Wagon's</a> Full-Stack Development Program.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Open</button>
+        <a  href="https://github.com/Jennacodes101/dejavu" class="btn btn-secondary"> <i class="px-2 fab fa-github fa-1x"> </i> Repo</a>
+        <a type="button" href="http://www.deja-vu.click/" class="btn btn-secondary">Open site</a>
       </div>
     </div>
   </div>
@@ -129,15 +142,16 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="watchlistModalLabel">Watchlist</h1>
+        <h1 class="modal-title fs-5" id="watchlistModalLabel">Watchlist</h1> <h5> <span class="mx-1 badge bg-secondary">Ruby on Rails</span> </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        Watchlist is web-application where you can create a list of movies you wish to watch and follow other people's lists.
+        This application uses the FreeMovieDatabase Api and is built with Ruby on Rails and a sqlite3 database
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Website</button>
+        <a  href="https://github.com/Jennacodes101/rails-watch-list" class="btn btn-secondary"> <i class="px-2 fab fa-github fa-1x"></i> Repo</a>
+        <a type="button" href="" class="btn btn-secondary">Walkthrough</a>
       </div>
     </div>
   </div>
@@ -146,23 +160,35 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="quizzleModalLabel">Quizzle</h1>
+        <h1 class="modal-title fs-5" id="quizzleModalLabel">Quizzle</h1> <h5> <span class="mx-1 badge bg-secondary">Python</span> <span class="mx-1 badge bg-secondary">SQLite3</span> </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        ...
+        Quizzle is a web application built with python/ sqlite3/ JS and CSS. It is a daily spanish-english quiz game complete with a homepage for
+        leaderboards. Each day a new list of questions will auto-generate from a questions database.
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary btn-sm">Walkthrough</button>
-        <button type="button" class="btn btn-primary btn-sm">Github repo</button>
+        <a  href="https://github.com/Jennacodes101/quizzle_final" class="btn btn-secondary"> <i class="px-2 fab fa-github fa-1x"> </i>Repo</a>
+        <a type="button" href="https://youtu.be/CsFu9HZlrTg" target="_blank" class="btn btn-secondary">Walkthrough</a>
       </div>
     </div>
   </div>
 </div>
-<div class="contact container">
-  <h3> Contact Me</h3>
-  <p><strong> jennacodes101@gmail.com</strong></p>
-hu
+
+<div class="container contact-section mt-5" id="contact">
+  <div class="container cont-contact text-center">
+    <h3 class="pb-3 pt-2"> Now what? </h3>
+    <div class=" cont-contact-btns">
+      <a href="#" class="btn btn-primary"> Email me </a>
+      <p class="pt-2"> <strong class="my-3"> Or </strong></p>
+      <h5> Find me here: </h5>
+      <ul class="my-1 p-1 contact-links">
+        <li> <a class="btn btn-sm btn-primary me-2" href="https://www.linkedin.com/in/jenna-castillo-461694140/" target="_blank">
+            LinkedIn
+          </a></li>
+          <li><a class="btn btn-sm btn-primary me-2" href="https://github.com/Jennacodes101" target="_blank">Github</a>
+          </li>
+      </ul>
+    </div>
+  </div>
 </div>
-dsfsafasd
