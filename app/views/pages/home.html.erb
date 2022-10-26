@@ -217,8 +217,7 @@
   <div class="container cont-contact text-center">
     <h3 class="pb-3 pt-2"> Now what? </h3>
     <div class="cont-contact-btns">
-      <a href="#" class="btn btn-primary disabled"> Email me </a>
-      <p class="my-1"> jennacodes101@gmail.com </p>
+      <%= mail_to("jennacodes101@gmail.com", "Email Me", class: "btn btn-primary") %>
       <p class="pt-2"> <strong class="my-3"> Or </strong></p>
       <h5> Find me here: </h5>
       <ul class="my-1 p-1 contact-links">
@@ -231,4 +230,3 @@
     </div>
   </div>
 </div>
-
