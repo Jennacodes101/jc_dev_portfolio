@@ -9,5 +9,6 @@ export default class extends Controller {
       typeSpeed: 50,
       loop: true,
     });
+    console.log("hello from typed_js");
   }
 }

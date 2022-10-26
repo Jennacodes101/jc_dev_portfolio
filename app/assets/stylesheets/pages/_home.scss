@@ -31,21 +31,20 @@ body {
 }
 
 .about{
-  background-color: $md-gray;
-  max-width: 50%;
   border-radius: 8px;
-  height: 300px;
+  color: $dk-gray
   p {
     color: $cultured;
   }
   hr{
     border-color: $cultured;
   }
+  h3{
+
+  }
   .about-img{
-    margin-top: 50px;
-    border-radius: 100%;
-    width: 20vh;
-    height: auto;
+    border-radius: 8px;
+    width: 200px;
     border: 2px solid $platinum;
     align-items: center;
   }
@@ -54,7 +53,7 @@ body {
     padding:10px;
     width: auto;
     height: 200px;
-    overflow-x: overlay;
+    overflow-x:hidden ;
     overflow-y:scroll;
 
 
@@ -88,6 +87,7 @@ body {
   width: 20%;
   border: 2px solid $dk-yellow;
   padding: 10px;
+  min-width: max-content;
 
 }
 
@@ -96,4 +96,8 @@ body {
     display: inline;
     list-style: none;
   }
+}
+
+.hidden {
+  display: none;
 }

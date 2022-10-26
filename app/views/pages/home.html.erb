@@ -8,23 +8,61 @@
     </div>
   </div>
 </section>
-<div class="container mt-5 about" id="about-me">
-  <div class="d-inline-flex ">
-    <div class="p-2 m-2">
-      <%= image_tag("profile.jpeg", class: "about-img") %>
+
+<div class="container mt-5 about" id="about-me" data-controller="about">
+  <div class="row justify-content-center">
+    <div class="col-lg-2 col-md-4 col-sm-12 mt-3">
+      <h3 >About me</h3>
     </div>
-    <div class='p-2 m-2'>
-      <h3>About me</h3>
-      <div class=" about-text">
-        <p> I am a full-stack web developer focused on building and designing exceptional digital products. I have a background in
-          marketing and video production. In 2021 I began my career transition into
-          tech with online resources such as Harvard's CS50, and in 2022 I completed
-          Le Wagon's (a european-based education company) 6-month full-stack intensive.
-          I am currently building merchant and scheduling web applications.
-        </p>
-      </div>
+    <div class="col-lg-4 col-md-8 col-sm-12">
+      <div class="segmented-control">
+        <input  data-action="click->about#displayBrief" type="radio" name="radio2" value="3" id="tab-1" checked/>
+        <label for="tab-1" class= "segmented-control__1">
+          <p class="mt-3">The Brief</p></label>
+
+      <input  data-action="click->about#displayBetween" type="radio" name="radio2" value="4" id="tab-2" />
+      <label for="tab-2" class= "segmented-control__2">
+        <p class="mt-3">Inbetween</p></label>
+
+      <input type="radio" data-action="click->about#displayLife" name="radio2" value="5" id="tab-3" />
+      <label for="tab-3" class= "segmented-control__3">
+        <p class="mt-3">Life Story</p></label>
+
+      <div class="segmented-control__color"></div>
+    </div>
     </div>
   </div>
+  <div class="row justify-content-center align-items-top">
+    <div class="col-lg-2 col-md-4 col-sm-12">
+      <%= image_tag("profile.jpeg", class: "about-img") %>
+    </div>
+    <div class='col-lg-4 col-md-8 col-sm-12'>
+      <div class="about-text ps-3">
+        <div data-about-target="briefText" class="">
+          <p> I am a full-stack web developer focused on building and designing exceptional digital products.
+            I am currently building merchant and scheduling web applications.
+          </p>
+        </div>
+        <div class="hidden" data-about-target="inbetweenText">
+            In March of 2021,  I began my career transition into tech with online resources such as Harvard's CS50 and App Academy Open.
+            In October 2022 I completed <a href="https://www.lewagon.com/" target="_blank" > Le Wagon's</a> 6-month full-stack intensive.
+
+
+        </div>
+        <div class="hidden" data-about-target="lifestoryText">
+          <p> Before I was a developer, I was a video producer and digital marketer.
+          <br>
+          From interviewing world class surfers in Oahu to collaborating with dancers in Ghana,
+          and even filming a life saving surgery in San Diego, my previous career provided me with a unique
+          education in creative thinking, collaboration, and adaptability that I now bring to my career as a developer.
+          I first touched code in 2021 and since then I loved using technical means for a creative ends. Now  I've
+          merged my past experience and future ambitions to build problem-solving, creative,
+          and hopefully one day, inspiring, web applications.
+          </p>
+        </div>
+      </div>
+  </div>
+</div>
 </div>
 
 <div class="container-sm tech-stack my-5 p-2">
@@ -178,7 +216,7 @@
 <div class="container contact-section mt-5" id="contact">
   <div class="container cont-contact text-center">
     <h3 class="pb-3 pt-2"> Now what? </h3>
-    <div class=" cont-contact-btns">
+    <div class="cont-contact-btns">
       <a href="#" class="btn btn-primary disabled"> Email me </a>
       <p class="my-1"> jennacodes101@gmail.com </p>
       <p class="pt-2"> <strong class="my-3"> Or </strong></p>
