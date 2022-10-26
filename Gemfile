@@ -63,7 +63,10 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# requested by terminal
 gem 'net-smtp', require: false
 gem 'net-imap', require: false
 gem 'net-pop', require: false
+# stimulus
+gem 'stimulus-rails'
+
+gem "jsbundling-rails", "~> 1.0"
